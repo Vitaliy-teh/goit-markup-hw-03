@@ -1,57 +1,5 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    width: ;
-}
-
-.header {
-    width: 1440px;
-    height: 72px;
-}
-
-.header-box {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
-    padding-top: 24px;
-}
-
-.header-nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
-    margin-right: 332px;
-}
-
-.logoheader {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    margin-left: 156px;
-    margin-right: 76px;
+.logo {
+    
 }
 
 .web {
@@ -64,7 +12,49 @@ body {
     background-color: #FFFFFF;
 }
 
-.logoheader {
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex; 
+    align-items: center;
+    gap: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -72,9 +62,18 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
-.navigate {
+.logo-header {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -83,8 +82,8 @@ body {
     text-decoration: none;
 }
 
-.navigate:hover,
-.navigate:focus {
+.nav-link:hover,
+.nav-link:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -93,26 +92,24 @@ body {
     text-decoration: none;
 }
 
-.adres-font {
+.contacts {
     font-style: normal;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    margin-left: auto;
 }
 
-.adres {
+.contacts-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
-    display: flex;
 }
 
-.adres:hover,
-.adres:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -121,7 +118,7 @@ body {
     text-decoration: none;
 }
 
-.one-section {
+.section-solutions {
     background-color: #2E2F42;
 }
 
@@ -133,7 +130,11 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    padding: 188px 472px 292px 472px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    padding: 188px 0 48px 0;
+    width: 496px;
 }
 
 .button-style {
@@ -145,16 +146,17 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 10px;
     border-radius: 4px;
-    padding-left: auto;
-    padding-right: auto;
-    width: 169px;
-    height: 56px;
+    padding: 16px 32px;
+    
+    
+}
+
+.button-container {
+    /* display: flex;
+    justify-self: center; */
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .button-style:hover,
@@ -162,6 +164,8 @@ body {
     color: #FFFFFF;
     background: #404BBF;
 }
+
+
 
 .two-section-title {
     font-family: "Roboto", sans-serif;
@@ -181,9 +185,21 @@ body {
     color: #434455;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .three-section {
     background-color: #F4F4FD;
-
 }
 
 .three-section-title {
@@ -198,7 +214,6 @@ body {
 .points-section-three {
     background-color: #FFFFFF;
 }
-
 
 .footer-background {
     background-color: #2E2F42;
